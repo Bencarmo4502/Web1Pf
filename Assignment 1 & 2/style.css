@@ -1,0 +1,54 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+
+
+body {
+  background-color: darkblue;
+}
+
+div#container {
+width:800px;
+    border:2px solid red;
+    margin:auto;
+    margin-top:50px;
+    /*padding:30px;*/
+  background:#02d5fa;
+    
+}
+
+header {
+    text-align:center;
+    background:#29abe3;
+  
+}
+
+
+h1 {
+  color: darkred;
+  text-align: center;
+}
+
+h2{
+    color: darkred;
+    text-align: center;
+}
+
+main {
+    padding:10px;
+}
+
+
+img {
+    width:100%;
+}
+
+figure {
+    margin:0px;
+    padding:12px;
+    background:darkblue;
+    color:white;
+}
+
+footer {
+    font-size:1.5em;
+     background:#29abe3;
+}
