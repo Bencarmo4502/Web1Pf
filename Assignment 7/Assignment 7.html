@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Food Fortune</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+    <script>
+    
+    function foodfortune() {
+        
+        var answers = [ 
+        "Is it Cheeseburger?", 
+        "Are you hungry for some tacos!?", 
+        "Are you looking for some Nachos?", 
+        "Is it pizza you craving?", 
+        "You are hungry for some pasta!",  
+        "You wanna eat healthy? then you want Salad!", 
+        "Are you thinking of Sandwich right now!?", 
+        "Do you Like Tamales?! Cause that want you want!", 
+        "Is it Burrito time?", 
+        "Do you want to eat Hot dogs? Cause thats what you are thinking."
+        
+        ];
+        
+        
+        var createAnswer = answers[Math.floor(Math.random()*answers.length)];
+         
+        document.getElementById("message").innerHTML= createAnswer;
+        
+    }//close foodfortune ()
+        
+    </script>
+    
+</head>
+
+
+<body>
+
+  <div id="container">
+
+
+<header>
+      
+      <H1>Welcome to Food Fortune!</H1>
+    <h2>Here I'm gonna guess what food you're craving!</h2>
+      </header>
+
+<main>
+      
+<form>
+    
+    <p>What are you craving right now?</p>
+    <input type="text">
+    <input type="button" onclick="foodfortune()"  value="Click Here">  
+    
+    </form>
+
+     <p id="message"></p>
+    
+      </main>
+      
+      <footer>
+      <p>&#169;Benjamin Carmona, <span id="year"></span></p>
+           <script>
+          document.getElementById("year").innerHTML = new Date().getFullYear();
+      </script>
+
+        </footer>
+      
+      
+  </div><!-- close "container" -->
+  
+
+</body>
+	
+</html> 

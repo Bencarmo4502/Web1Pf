@@ -1,0 +1,101 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    margin: 0;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+body {
+
+    
+    background: blue url(../img/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjg2NC1taW5kLWZvb2RpbGx1c3RyYXRpb25zLTQwXzFfMi5qcGc.webp) fixed no-repeat center;
+    background-size:cover;
+}
+    
+
+
+#container {
+    height:50%;
+	width: 50%;
+	max-width: 600px;
+	margin-top:200px;
+	margin:auto;
+	padding:50px;
+	background:Darkorange;
+    font-family:fantasy;
+	font-size:20px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+form {
+	padding:50px;
+	
+
+}
+h1{color:red;
+}
+h2{color:Brown;
+}
+
+
+p{color:purple;
+}
+
+input[type="button"] {
+      color:black;
+          background:Red;
+    border:0px;
+    border-radius:3px;
+    padding:3px;
+}
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+
+
+
+
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+
+ #container {
+        
+        width:950px;
+    }
+    
+    .mobile {
+        display:none;
+    }
+    
+    .desktop {
+        display:block;
+    }
+	
+} /* closes 1024px+ */
+
+
+
