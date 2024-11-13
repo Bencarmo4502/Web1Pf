@@ -1,0 +1,254 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+
+
+body {animation: change 25s Infinite alternate;
+    
+}
+@keyframes change {
+    
+    25% { background:purple; }
+    45% {background: green; }
+    60% {background: blue;}
+    86% { background: violet; }
+    100% {background: black; }
+    
+}
+
+#container {
+    padding:auto;
+    margin:auto;
+}
+
+ div.ball{
+  height: 100px;
+  width: 100px;
+  background-color:#2791E0;
+  position:absolute;
+  top:20px;
+  right:0px;
+  bottom:0px;
+  left:200px; 
+     border-radius: 50%;
+}
+
+div.ball:hover {
+	background-color:lightyellow;
+    width: 100px;
+    }
+    
+div.ball2{
+       height: 100px;
+  width: 100px;
+  background-color:darkred;
+  position:absolute;
+  top:20px;
+  right:0px;
+  bottom:0px;
+  left:500px; 
+     border-radius: 50%;
+}
+    
+    div.ball2:hover {
+        background-color:darkorange;
+        width: 100px;
+    }
+    
+div.square{
+    height: 100px;
+    width:100px;
+    background-color: cyan;
+    position:absolute;
+    top:500px;
+    right:0px;
+    bottom:0px;
+    left:200px;
+}
+
+@keyframes evo2 {
+    0% { color: black; }
+    
+    100% { color: cyan; 
+            background: cyan;
+    
+    }
+    
+    
+}
+
+div.square:hover {
+    
+    transform: rotate(360deg);
+    transition: all 8s;
+    transform: translate(50px,120px);
+}
+
+
+div.square2{
+     height: 100px;
+    width:100px;
+    background-color: cadetblue;
+    position:absolute;
+    top:500px;
+    right:0px;
+    bottom:0px;
+    left:500px;
+}
+
+div.square2:hover {
+    transform: rotate(600deg);
+    transition: all 8s;
+    transform: translate(500px,80px);
+}
+    
+    
+div.rectangle{
+    height:200px;
+    width:100px;
+    background-color: fuchsia;
+    position:absolute;
+    top:200px;
+    right:0px;
+    bottom:0px;
+    left:350px;
+}
+
+div.rectangle:hover {
+    background-color:purple;
+        width: 200px;
+}
+
+
+div.rectangle2{
+    height:200px;
+    width:100px;
+    background-color: orange;
+    position:absolute;
+    top:200px;
+    right:0px;
+    bottom:0px;
+    left:900px;
+}
+
+div.rectangle2:hover {
+    background-color:pink;
+        width: 200px;
+}
+
+
+div.ball3{
+  height: 100px;
+  width: 100px;
+  background-color:lime;
+  position:absolute;
+  top:20px;
+  right:0px;
+  bottom:0px;
+  left:750px; 
+     border-radius: 50%;
+}
+
+div.ball3:hover {
+background-color:bisque;
+}
+
+
+div.ball4{
+    height:100px;
+    width:100px;
+    background-color: brown;
+    position:absolute;
+    top:0px
+    right:0px;
+    bottom:675px;
+    left:1050px;
+        border-radius: 50%;
+}
+
+div.ball4:hover {
+    background-color: chocolate;
+}
+
+
+div.square3{
+    height: 100px;
+    width:100px;
+    background-color: gold;
+    position:absolute;
+    top:500px;
+    right:0px;
+    bottom:0px;
+    left:750px;
+}
+
+div.square3:hover {
+    transform: rotate(600deg);
+    transition: all 8s;
+    transform: translate(-500px,-80px);
+}
+
+
+div.square4{
+    height: 100px;
+    width:100px;
+    background-color: white;
+    position:absolute;
+    top:500px;
+    right:0px;
+    bottom:0px;
+    left:1050px;
+}
+
+
+div.square4:hover {
+    
+    transform: rotate(360deg);
+    transition: all 8s;
+    transform: translate(-50px,-120px);
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	
+	
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	
+	
+	
+} /* closes 1024px+ */
+
+
+
